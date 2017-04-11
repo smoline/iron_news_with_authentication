@@ -1,5 +1,5 @@
-$navbar-height:                    70px;
-$navbar-padding-vertical:          (($navbar-height - 1.5) / 2);
+// $navbar-height:                    70px;
+// $navbar-padding-vertical:          (($navbar-height - 1.5) / 2);
 $link-color:                       desaturate(lighten(#2f93e6, 20%),20%);
 $link-hover-color:                 $link-color;
 $navbar-default-link-hover-color:  $link-color;
@@ -10,6 +10,11 @@ $navbar-default-link-hover-color:  $link-color;
 
 .s-navbar-brand {
   float: left;
+  padding: 5px;
+  height: 50px;
+}
+
+.s-navbar-text {
+  margin-top: 0.75px;
   padding: 15px;
-  height: 70px;
 }

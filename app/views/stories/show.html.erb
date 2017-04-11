@@ -28,6 +28,8 @@
 	<div class="panel-heading">
     Comments
   </div>
-<%= render @story.comments %>
+  <%= render @story.comments %>
 </div>
-<%= render 'comments/form' %>
+<% if logged_in? %>
+  <%= render 'comments/form' %>
+<% end %>

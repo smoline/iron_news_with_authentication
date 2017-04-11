@@ -30,7 +30,7 @@
           <span class="icon-bar"></span>
         </button>
         <%= link_to "/", class: "s-navbar-brand" do %>
-          <%= image_tag("TIYLogo.png", :width => 75, :height => 60) %>
+          <%= image_tag("TIYLogo.png", :width => 64, :height => 53) %>
         <% end %>
       </div>
       <div id="navbar" class="collapse navbar-collapse">
@@ -39,6 +39,15 @@
           <li><%= link_to new_story_path do %>
             New Story
           <% end %></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right nav-font">
+          <% if logged_in? %>
+            <li class="s-navbar-text">Welcome, <%= current_user.name %></li>
+            <li> <%= link_to 'Logout', logout_path %></li>
+          <% else %>
+            <li><%= link_to "Login", login_path %></li>
+            <li> <%= link_to 'Signup', signup_path %></li>
+          <% end %>
         </ul>
       </div>
     </div>
