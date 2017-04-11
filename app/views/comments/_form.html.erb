@@ -6,12 +6,6 @@
     <%= form_for([@story, @story.comments.build]) do |f| %>
     <table class="table">
       <tr>
-        <th class="active">Commenter Email</th>
-      </tr>
-      <tr>
-        <td><%= f.text_field :commenter, class: "form-control", placeholder: "Enter Your Email Here" %></td>
-      </tr>
-      <tr>
         <th class="active">Comments</th>
       </tr>
       <tr>

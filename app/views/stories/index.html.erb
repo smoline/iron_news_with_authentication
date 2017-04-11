@@ -13,7 +13,7 @@
       <tr>
         <td></td>
         <td>Posted at <%= time_ago_in_words(story.created_at) %> ago</td>
-        <td><%= story.email %></td>
+        <td><%= story.created_by.email %></td>
         <td>
           <%= link_to story do %>
             <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
