@@ -5,11 +5,11 @@ class Story < ApplicationRecord
   has_many :comments, dependent: :destroy
   belongs_to :created_by, class_name: "User"
 
-  def can_this_user_edit?(user)
-    created_by == user
+  def can_this_user_edit?(current_user)
+    created_by == current_user
   end
 
-  def can_this_user_destroy?(user)
-    created_by == user
+  def can_this_user_destroy?(current_user)
+    created_by == current_user
   end
 end

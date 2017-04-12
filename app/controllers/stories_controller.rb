@@ -56,7 +56,7 @@ class StoriesController < ApplicationController
   # DELETE /stories/1
   def destroy
     @story = Story.find(params[:id])
-    unless @story.can_this_user_edit?(current_user)
+    unless @story.can_this_user_destroy?(current_user)
       send_them_back_with_error
       return
     end
