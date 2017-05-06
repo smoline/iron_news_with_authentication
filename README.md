@@ -1,24 +1,14 @@
-# README
+# Iron News 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+See this app here: https://tiy-iron-news.herokuapp.com/ 
 
-Things you may want to cover:
+## This app is built with Rails 5.0 and Ruby 2.4
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Using Hacker News as inspiration, I built this app to utilize database features of Ruby and Rails.
+* This app brings together everything I have learned so far, including:
+  * Bootstrap
+  * Forms
+  * ActiveRecord and databases for storing data
+  * Classes, blocks, and enumerables
+  * ERB
+* Authentication via bcrypt
