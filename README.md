@@ -1,5 +1,9 @@
 # Iron News with Authentication via Bcrypt
 
+See this app here: https://tiy-iron-news.herokuapp.com/
+
+## This app is built with Rails 5.0 and Ruby 2.4
+
 ## This repo is a continuation of the Iron News App
 
 * Users have been added to the system using bcrypt based user authentication
