@@ -1,24 +1,15 @@
-# README
+# Iron News with Authentication via Bcrypt
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## This repo is a continuation of the Iron News App
 
-Things you may want to cover:
+* Users have been added to the system using bcrypt based user authentication
+* Implemented sign up, login, logout
+* Added an acknowledgement that the user is logged in on the navbar
+* Tracking which user created a story
+* Only users that are logged in may post a new story
+* Only the user that created a story may edit or delete it
+* Users that are not logged in may still see the stories on the index url
+* This app tracks which user created a comment
+* Added the ability to edit/destroy a comment but only if the logged in user was the author
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+![Iron News](docs/IronNewsAuth.png)
